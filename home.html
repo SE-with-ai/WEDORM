@@ -59,6 +59,7 @@
     }
 
     .home{
+        display: none;
         text-align: center;
         position: absolute;
         top: 35%;
@@ -193,7 +194,7 @@
         <div id="slogan">Sharing is Caring</div>
     </div>
     <div class="menubar">
-        <a href = "home.html">Home</a>
+        <a onclick="document.getElementById('home').style.display='block'">Home</a>
         <a href = "#borrow">Borrow</a>
         <a href = "#profile">Profile</a>
         <a onclick="document.getElementById('register').style.display='block'">Register</a>
@@ -201,6 +202,7 @@
     </div>
     <div id="home" class="home">
         <h1>My Items</h1>
+        <span onclick="document.getElementById('home').style.display='none'" class="close" title="Close Modal">&times;</span>
         <br>
         <table border="1">
             <tr>
