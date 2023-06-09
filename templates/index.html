@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeDorm</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    
+</style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h3>We<span>Dorm</span></h3>
+        <p>Sharing is Caring</p>
+    </div>
+    <div class="user">
+        <img src="images/images.jpg" alt="">
+        <h3 class="name">Mark</h3>
+        <p class="post">20009999</p>
+        <p class="points">30 points</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#market">Market</a></li>
+            <li><a href="#borrow">Borrow</a></li>
+            <li><a href="#myitems">My Items</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+    <!-- footer -->
+    <div class="footer">
+        <button class="btnsignout">Sign Out</button>
+        <p>&copy; Copyright 2023 <br> Software Engineering Final project</p>
+    </div>
+</header>
+
+<!-- toggle 3 lines bar -->
+<div id="menu" class="fas fa-bars"></div> 
+
+<section class="home" id="home">
+    <h3>HI THERE !</h3>
+    <h1>Welcome to <span>We<a>Dorm</a></span></h1>
+    <p>It's a place where you can lend and borrow anything with people around you</p>
+    <p>By lending anything you will get 1 point each</p>
+    <a href="#market"><button class="btn">Get Started <i class="fas fa-play"></i></button></a>
+</section>
+
+<section class="market" id="market">
+    <h1 class="heading"> <span>Market</span> <button class="btnadd">Add Item <i class="fas fa-plus"></i></button></h1>
+    <div class="searchbox">
+        <input type="search"><button type=submit class="fas fa-search" id="btnsearch"></button></input>
+    </div>
+    <table class="tablemarket" border="1">
+        <tr class="headertable">
+            <th>Item Name</th>
+            <th>Brand</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Consumeable</th>
+            <th>Status</th>
+            <th>Category</th>
+            <th>Operation</th>
+        </tr>
+        <tr>
+            <td>Table</td>
+            <td>IKEA</td>
+            <td>small table</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Stationery</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>tablet pc</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Digital Device</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>Eraser</td>
+            <td>Pentel</td>
+            <td>eraser for pencil</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Stationery</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>Mouse</td>
+            <td>Asus</td>
+            <td>bluetooth mouse</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Digital Device</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>Speaker</td>
+            <td>JBL</td>
+            <td>bluetooth speaker</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Digital Device</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+    </table>
+</section>
+
+<!-- borrow section -->
+<section class="borrow" id="borrow">
+    <h1 class="heading">Borrow <span>record</span></h1>
+    <div class="searchbox1">
+        <input type="search"><button type=submit class="fas fa-search" id="btnsearch"></button></input>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Item Name</th>
+            <th>Owner</th>
+            <th>Date Borrowed</th>
+            <th>Deadline Return</th>
+            <th>Time Remained</th>
+            <th>Operation</th>
+        </tr>
+        <tr>
+            <td>Lamp</td>
+            <td>Andy</td>
+            <td>2023-05-11 15:06:11</td>
+            <td>2023-06-11 23:59:59</td>
+            <td>2 days</td>
+            <td><button class="btnedit">returned</button></td>
+        </tr>
+        <tr>
+            <td>Mouse</td>
+            <td>Bobby</td>
+            <td>2023-05-15 14:02:19</td>
+            <td>2023-06-15 23:59:59</td>
+            <td>6 days</td>
+            <td><button class="btnedit">returned</button></td>
+        </tr>
+        <tr>
+            <td>Keyboard</td>
+            <td>Maria</td>
+            <td>2023-05-23 10:37:10</td>
+            <td>2023-06-23 23:59:59</td>
+            <td>14 days</td>
+            <td><button class="btnedit">returned</button></td>
+        </tr>
+        <tr>
+            <td>Lamp</td>
+            <td>Danny</td>
+            <td>2023-05-29 21:09:18</td>
+            <td>2023-06-29 23:59:59</td>
+            <td>20 days</td>
+            <td><button class="btnedit">returned</button></td>
+        </tr>
+        <tr>
+            <td>Mirror</td>
+            <td>Kathy</td>
+            <td>2023-05-31 13:12:11</td>
+            <td>2023-07-01 23:59:59</td>
+            <td>22 days</td>
+            <td><button class="btnedit">returned</button></td>
+        </tr>
+    </table>
+</section>
+
+<section class="myitems" id="myitems">
+    <h1 class="heading">My <span>Items</span> <button class="btnadd">Add Item <i class="fas fa-plus"></i></button></h1>
+    <div class="searchbox">
+        <input type="search"><button type=submit class="fas fa-search" id="btnsearch"></button></input>
+    </div>
+    <table border="1">
+        <tr>
+            <th>Item Name</th>
+            <th>Brand</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Consumeable</th>
+            <th>Status</th>
+            <th>Category</th>
+            <th>Operation</th>
+        </tr>
+        <tr>
+            <td>Table</td>
+            <td>IKEA</td>
+            <td>small table</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Stationery</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>tablet pc</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Digital Device</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>tablet pc</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Digital Device</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>tablet pc</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Digital Device</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+        <tr>
+            <td>iPad</td>
+            <td>Apple</td>
+            <td>tablet pc</td>
+            <td>1</td>
+            <td>No</td>
+            <td>Available</td>
+            <td>Digital Device</td>
+            <td><button class="btnedit">edit</button> <button class="btndelete">delete</button></td>
+        </tr>
+    </table>
+</section>
+
+<section class="profile" id="profile">
+<h1 class="heading">My<span> Profile</span></h1>
+<div class="row">
+    <div class="content">
+        <h3 class="title">My Information</h3>
+        <div class="info">
+            <h3><i class="fas fa-envelope"></i> Email: marklee@gmail.com</h3>
+            <h3><i class="fas fa-user"></i> Student Number: 20009999</h3>
+            <h3><i class="fas fa-phone"></i> Phone: +1245678</h3>
+            <h3><i class="fas fa-map-marker-alt"></i> Dorm: 明德园 5号 </h3>
+        </div>
+    </div>
+    <div class="pointrec">
+        <h3 class="title">Point Record</h3>
+        <table border="1">
+            <tr>
+                <th>Date</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>2023-05-11 15:06:11</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>2023-05-15 14:02:19</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>2023-05-23 10:37:10</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>2023-05-29 21:09:18</td>
+                <td>+1</td>
+            </tr>
+            <tr>
+                <td>2023-05-31 13:12:11</td>
+                <td>+1</td>
+            </tr>
+        </table>
+    </div>
+    <!-- <form action="">
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="text" placeholder="project" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
+    </form> -->
+</div>
+</section>
+
+<!-- scroll top button -->
+<a href="#home" class="top">
+    <img src="images/imgscrolltop.png">
+</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
